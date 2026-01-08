@@ -1,0 +1,17 @@
+*$py.class
+*.py[cod]
+*.pyc
+*.so
+*.swo
+*.swp
+*~
+.DS_Store
+.Python
+.idea/
+.vscode/
+ENV/
+Thumbs.db
+__pycache__/
+env/
+imagine.desktop
+venv/
