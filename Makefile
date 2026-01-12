@@ -32,7 +32,7 @@ install:
 	@$(PYTHON) -m venv $(VENV_DIR)
 
 	@$(VENV_DIR)/bin/pip install --upgrade pip
-	@$(VENV_DIR)/bin/pip install --extra-index-url https://download.pytorch.org/whl/cpu -r requirements.txt
+	@$(VENV_DIR)/bin/pip install --pre torch torchvision --extra-index-url https://download.pytorch.org/whl/nightly/cpu -r requirements.txt
 	@$(VENV_DIR)/bin/pip uninstall -y optimum
 	@install -m 755 imagine $(BINDIR)/imagine
 
