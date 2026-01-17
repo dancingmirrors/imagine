@@ -999,7 +999,7 @@ class ImagineGUI(Gtk.Window):
                 try:
                     self.pipe = PipelineClass.from_single_file(
                         normalized_url,
-                        torch_dtype=dtype,
+                        dtype=dtype,
                         low_cpu_mem_usage=True,
                         safety_checker=None
                     )
@@ -1023,7 +1023,7 @@ class ImagineGUI(Gtk.Window):
 
                 self.pipe = PipelineClass.from_pretrained(
                     model_name,
-                    torch_dtype=dtype,
+                    dtype=dtype,
                     local_files_only=False,
                     low_cpu_mem_usage=True,
                     safety_checker=None
